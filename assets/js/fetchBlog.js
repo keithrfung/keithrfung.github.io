@@ -7,7 +7,7 @@ const fetchMediumPosts = () => fetch('https://api.rss2json.com/v1/api.json?rss_u
       return posts
 })
 
-const fetchInfernoredPosts = () => fetch('https://api.rss2json.com/v1/api.json?rss_url=https://blog.infernored.com/rss/')
+const fetchInfernoredPosts = () => fetch('https://api.rss2json.com/v1/api.json?rss_url=https://blog.infernored.com/rss/&api_key=bhfaxbh5i4brvkqx0cudih5tb5jvk9nnkrns3fv2&count=100')
    .then((res) => res.json())
    .then((data) => {
       const res = data.items
