@@ -1,16 +1,31 @@
-This is Keith Fung's personal website. 
+# keithrfung.dev - v1
 
-## Features
+The first iteration of keithrfung.dev built with Gatsby and hosted with GitHub Pages
 
-- About
-- Work
-- Blog (Under Construction)
-- Contact Page
+🛠 Installation & Set Up
 
-## Theme
+1.  **Create a Gatsby site.**
 
-### Dimension by [HTML5 UP](html5up.net) 
-Created by [AJ](aj@lkn.io) | @ajlkn
-> Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+
+    ```shell
+    # create a new Gatsby site using the minimal TypeScript starter
+    npm init gatsby
+    ```
+
+2.  **Start developing.**
+
+    Navigate into your new site’s directory and start it up.
+
+    ```shell
+    cd my-gatsby-site/
+    npm run develop
+    ```
+
+3.  **Open the code and start customizing!**
+
+    Your site is now running at http://localhost:8000!
+
+    Edit `src/pages/index.tsx` to see your site update in real-time!
 
 
