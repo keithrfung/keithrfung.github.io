@@ -1,31 +1,29 @@
+![](https://1.gravatar.com/avatar/2ed0a4ec4005392d9eb57e61d9efbbb2?size=250)
+
 # keithrfung.dev - v1
 
-The first iteration of keithrfung.dev built with Gatsby and hosted with GitHub Pages
+The first iteration of keithrfung.dev built with Gatsby and hosted with GitHub Pages. Site uses Framer Motion to incorporate some friendly and fun animations while trying to maintain a simple codebase for light maintenance.
 
 🛠 Installation & Set Up
 
-1.  **Create a Gatsby site.**
+1.  **Setup**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+    Install the dependencies
 
     ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby
+    npm install
     ```
 
 2.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+    Navigate into the root directory and start it up.
 
     ```shell
-    cd my-gatsby-site/
     npm run develop
     ```
 
-3.  **Open the code and start customizing!**
+3.  **Check out the site**
 
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+    The site is now running at http://localhost:8000!
 
 
