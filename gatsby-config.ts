@@ -11,7 +11,15 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-theme-ui",
-    "gatsby-plugin-google-gtag",
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-WC183XFZV7", // Google Analytics / GA
+        ],
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     {
