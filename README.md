@@ -1,5 +1,5 @@
-<div style="display: flex; justify-content: center">
-    <img src="https://1.gravatar.com/avatar/2ed0a4ec4005392d9eb57e61d9efbbb2?size=250" style="border-radius: 50%;">
+<div align="center">
+    <img src="https://1.gravatar.com/avatar/2ed0a4ec4005392d9eb57e61d9efbbb2?size=250" />
 </div>
 
 # keithrfung.dev - v1
