@@ -17,15 +17,14 @@ const theme = {
     background: COLORS.spaceCadet,
     primary: COLORS.purpleHeart,
     secondary: COLORS.spiroDiscoBall,
-    accent: "#609",
-    muted: "#f6f6f6",
   },
   fonts: {
-    body: "-apple-system, Roboto, sans-serif, serif",
-    heading: "-apple-system, Roboto, sans-serif, serif",
-    monospace: "-apple-system, Roboto, sans-serif, serif",
+    body: "Roboto, sans-serif, serif",
+    heading: "Roboto, sans-serif, serif",
+    monospace: "Roboto, sans-serif, serif",
   },
   fontSizes: [
+    "0.5rem",
     "0.75rem",
     "0.875rem",
     "1rem",
@@ -37,25 +36,40 @@ const theme = {
     "4.5rem",
     "8rem",
   ],
-
+  text: {
+    default: {
+      color: "text",
+      fontFamily: "body",
+    },
+  },
   styles: {
     // the keys used here reference elements in MDX
     h1: {
       display: "flex",
       justifyContent: "center",
       fontFamily: "heading",
-      fontSize: [8, 8, 9],
+      fontSize: [6, 7, 8],
+      margin: [2, 3, 4],
     },
     h2: {
       display: "flex",
       justifyContent: "center",
       fontFamily: "heading",
+      textAlign: "center",
+      fontSize: [4, 5, 6],
+    },
+    h3: {
+      display: "flex",
+      justifyContent: "center",
+      fontFamily: "heading",
+      fontSize: [3, 4, 5],
     },
     p: {
       display: "flex",
       flex: 1,
       margin: 3,
       maxWidth: 700,
+      fontSize: [3, 4, 4],
       justifyContent: "center",
       textAlign: "center",
       fontFamily: "body",
@@ -65,7 +79,7 @@ const theme = {
       justifyContent: "center",
       textAlign: "center",
       fontFamily: "body",
-      color: COLORS.muted,
+      color: COLORS.Verdigris,
       textStyle: "none",
       textDecoration: "none",
     },

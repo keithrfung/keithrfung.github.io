@@ -3,16 +3,14 @@ import { jsx } from "theme-ui";
 
 import { Link as GatsbyLink } from "gatsby";
 
+// (property) color?: StylePropertyValue<Property.Color | undefined>
+
 export default function Link(props: any) {
   return (
     <GatsbyLink
       {...props}
       sx={{
-        // this uses the value from `theme.space[4]`
-        height: 100,
-        // these use values from `theme.colors`
-        color: "primary",
-        backgroundColor: "secondary",
+        color: "secondary",
         textDecoration: "none",
       }}
     >

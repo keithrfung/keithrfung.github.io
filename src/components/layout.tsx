@@ -1,35 +1,26 @@
-import React, { FC } from "react";
-import { motion } from "framer-motion";
+/** @jsx jsx */
+import { Box, jsx } from "theme-ui";
+
+import { FC } from "react";
+import Header from "./header";
+import Footer from "./footer";
 
 export const Layout: FC<{ children: any }> = ({ children }) => (
-  <motion.div
-    animate={{ height: ["0%", "100%"] }}
-    drag
-    dragConstraints={{
-      top: -50,
-      left: -50,
-      right: 50,
-      bottom: 50,
-    }}
-    style={{
-      height: "100%",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-    }}
-  >
-    <motion.div
-      drag
-      dragConstraints={{
-        top: -50,
-        left: -50,
-        right: 50,
-        bottom: 50,
+  <Box style={{ height: "100vh", width: "100vw" }}>
+    <Header />
+    <Box
+      sx={{
+        height: "80%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
       }}
-    />
-    <div>{children}</div>
-  </motion.div>
+    >
+      <Box>{children}</Box>
+    </Box>
+    <Footer />
+  </Box>
 );
 
 export default Layout;
