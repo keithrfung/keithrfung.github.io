@@ -1,16 +1,29 @@
-This is Keith Fung's personal website. 
+![](https://1.gravatar.com/avatar/2ed0a4ec4005392d9eb57e61d9efbbb2?size=250)
 
-## Features
+# keithrfung.dev - v1
 
-- About
-- Work
-- Blog (Under Construction)
-- Contact Page
+The first iteration of keithrfung.dev built with Gatsby and hosted with GitHub Pages. Site uses Framer Motion to incorporate some friendly and fun animations while trying to maintain a simple codebase for light maintenance.
 
-## Theme
+🛠 Installation & Set Up
 
-### Dimension by [HTML5 UP](html5up.net) 
-Created by [AJ](aj@lkn.io) | @ajlkn
-> Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+1.  **Setup**
+
+    Install the dependencies
+
+    ```shell
+    npm install
+    ```
+
+2.  **Start developing.**
+
+    Navigate into the root directory and start it up.
+
+    ```shell
+    npm run develop
+    ```
+
+3.  **Check out the site**
+
+    The site is now running at http://localhost:8000!
 
 
