@@ -4,22 +4,51 @@ import { Box, jsx } from "theme-ui";
 import { FC } from "react";
 import Header from "./header";
 import Footer from "./footer";
+import AnimatedBackground from "./AnimatedBackground";
 
 export const Layout: FC<{ children: any }> = ({ children }) => (
-  <Box style={{ height: "100vh", width: "100vw" }}>
-    <Header />
+  <Box
+    sx={{
+      minHeight: "100vh",
+      maxWidth: "100vw",
+      position: "relative",
+    }}
+  >
+    <AnimatedBackground />
     <Box
       sx={{
-        height: "80%",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
+        minHeight: "100vh",
+        maxWidth: "100vw",
+        padding: [3, 4, 4],
       }}
     >
-      <Box>{children}</Box>
+      <Header />
+      <main
+        sx={{
+          zIndex: 9999,
+          width: "100%",
+          flex: "1 1 auto",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          {children}
+        </Box>
+      </main>
+      <Footer />
     </Box>
-    <Footer />
   </Box>
 );
 

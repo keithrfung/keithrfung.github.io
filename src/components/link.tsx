@@ -10,8 +10,9 @@ export default function Link(props: any) {
     <GatsbyLink
       {...props}
       sx={{
-        color: "secondary",
+        color: "diamond",
         textDecoration: "none",
+        ":hover": { color: "secondary" },
       }}
     >
       {props.children}

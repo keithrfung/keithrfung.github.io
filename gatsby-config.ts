@@ -52,7 +52,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Roboto`],
+        fonts: [`Montserrat`, `Karla`],
         display: "swap",
       },
     },

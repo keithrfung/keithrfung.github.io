@@ -15,54 +15,75 @@ const links = [
     href: "https://open.spotify.com/user/4mallyintroduced?si=05351fa14606442e",
     alt: "Spotify Profile",
     Icon: SpotifyIcon,
+    hoverColor: "verdigris",
   },
   {
     order: 3,
     href: "https://instagram.com/keith.r.fung",
     alt: "Instagram Profile",
     Icon: InstagramIcon,
+    hoverColor: "darkTopaz",
   },
   {
     order: 2,
     href: "https://github.com/keithrfung",
     alt: "Github Profile",
     Icon: GitHubIcon,
+    hoverColor: "darkLavender",
   },
   {
     order: 1,
     href: "https://linkedin.com/in/keithrfung",
     alt: "LinkedIn Profile",
     Icon: LinkedInIcon,
+    hoverColor: "spiroDiscoBall",
   },
 ];
 
 export const Header: FC = () => (
-  <div
+  <header
     sx={{
-      height: 50,
-      padding: [3, 4, 4],
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
+      zIndex: 9999,
     }}
   >
-    <span sx={{ fontFamily: "body", fontWeight: "bold", fontSize: [4, 5, 5] }}>
+    <Link
+      href="/"
+      alt="Reload Site"
+      sx={{
+        color: "text",
+        verticalAlign: "center",
+        fontFamily: "body",
+        fontWeight: "bold",
+        fontSize: [4, 5, 5],
+        ":hover": { color: "secondary" },
+      }}
+    >
       keithrfung.dev
-    </span>
+    </Link>
     <Box>
       {links
         .sort((a, b) => a.order - b.order)
-        .map(({ href, alt, Icon }) => (
-          <Shaker style={{ marginRight: 10 }}>
+        .map(({ href, alt, Icon, hoverColor }) => (
+          <Shaker style={{ marginLeft: 10 }}>
             <Link href={href} alt={alt}>
               <Icon
-                sx={{ height: ICON_SIZE, width: ICON_SIZE, color: "text" }}
+                sx={{
+                  height: ICON_SIZE,
+                  width: ICON_SIZE,
+                  color: "text",
+                  ":hover": {
+                    color: hoverColor || "primary",
+                  },
+                }}
               />
             </Link>
           </Shaker>
         ))}
     </Box>
-  </div>
+  </header>
 );
 
 export default Header;

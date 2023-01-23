@@ -8,7 +8,7 @@
 
 The first iteration of keithrfung.dev built with Gatsby and hosted with GitHub Pages. Site uses Framer Motion to incorporate some friendly and fun animations while trying to maintain a simple codebase for light maintenance.
 
-🛠 Installation & Set Up
+🛠 Installation & Running
 
 1.  **Setup**
 
@@ -30,4 +30,15 @@ The first iteration of keithrfung.dev built with Gatsby and hosted with GitHub P
 
     The site is now running at http://localhost:8000!
 
+🏗 Architecture
+
+The architecture of this setup is designed to be as lightweight and easily maintainable as possible.
+
+- **React** for quick componentization. 
+- **Gatsby** allows for a quick load time and easily integrating **Markdown** components for easy edits. 
+- **Framer Motion** is in use to add a visual flair with minimal code.
+
+🎨 Design
+
+If you're interested in some of the design and outline process, you can view my [FigJam here](https://www.figma.com/file/9V6WSDT5HwQtPtaYwjIS5U/Rebranding-v1?node-id=102%3A107&t=MbJCAnhjJXyJ0yl7-1).
 

@@ -7,8 +7,8 @@ const COLORS = {
   spiroDiscoBall: "#1abbee",
   topaz: "#fcd379",
   darkTopaz: "#f6b058",
-  Verdigris: "#4cbbab",
-  Watermelon: "#ea618c",
+  verdigris: "#4cbbab",
+  watermelon: "#ea618c",
 };
 
 const theme = {
@@ -16,12 +16,13 @@ const theme = {
     text: COLORS.cultured,
     background: COLORS.spaceCadet,
     primary: COLORS.purpleHeart,
-    secondary: COLORS.spiroDiscoBall,
+    secondary: COLORS.watermelon,
+    ...COLORS,
   },
   fonts: {
-    body: "Roboto, sans-serif, serif",
-    heading: "Roboto, sans-serif, serif",
-    monospace: "Roboto, sans-serif, serif",
+    body: "Karla, sans-serif, serif",
+    heading: "Montserrat, sans-serif, serif",
+    monospace: "Karla, sans-serif, serif",
   },
   fontSizes: [
     "0.5rem",
@@ -49,7 +50,8 @@ const theme = {
       justifyContent: "center",
       fontFamily: "heading",
       fontSize: [6, 7, 8],
-      margin: [2, 3, 4],
+      margin: [2, 3, 3],
+      marginBottom: 0,
     },
     h2: {
       display: "flex",
@@ -57,6 +59,7 @@ const theme = {
       fontFamily: "heading",
       textAlign: "center",
       fontSize: [4, 5, 6],
+      margin: [2, 3, 3],
     },
     h3: {
       display: "flex",
@@ -67,10 +70,11 @@ const theme = {
     p: {
       display: "flex",
       flex: 1,
-      margin: 3,
+      margin: "auto",
       maxWidth: 700,
       fontSize: [3, 4, 4],
       justifyContent: "center",
+      alignItems: "center",
       textAlign: "center",
       fontFamily: "body",
     },
