@@ -1,7 +1,7 @@
 const COLORS = {
   cultured: "#f8f8f8",
   spaceCadet: "#212650",
-  purpleHeart: "#724e96",
+  purpleHeart: "#8957a0",
   darkLavender: "#724e96",
   diamond: "#c1e5f3",
   spiroDiscoBall: "#1abbee",

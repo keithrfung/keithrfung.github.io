@@ -21,6 +21,8 @@ const blobVariations = [
     startY: "0vh",
     endX: "100vw",
     endY: "100vh",
+    duration: 5,
+    rotate: 35,
   },
   {
     color: "spiroDiscoBall",
@@ -36,6 +38,8 @@ const blobVariations = [
     startY: "60vh",
     endX: "20vw",
     endY: "0vh",
+    duration: 35,
+    ease: "easeIn",
   },
   {
     color: "darkTopaz",
@@ -43,6 +47,14 @@ const blobVariations = [
     startY: "30vh",
     endX: "95vw",
     endY: "20vh",
+  },
+  {
+    color: "darkLavender",
+    startX: "80vw",
+    startY: "30vh",
+    endX: "10vw",
+    endY: "50vh",
+    duration: 5,
   },
 ];
 
@@ -91,7 +103,7 @@ export const AnimatedBackground: FC = () => {
       }}
     >
       {blobs.map((Blob, index) => {
-        const { color, startX, startY, endX, endY, ease } =
+        const { color, startX, startY, endX, endY, duration, rotate, ease } =
           blobVariations[index];
         return (
           <motion.div
@@ -111,12 +123,12 @@ export const AnimatedBackground: FC = () => {
             transition={{
               repeatType: "reverse",
               repeat: Infinity,
-              duration: 30,
-              rotate: 20,
+              duration: duration || 30,
+              rotate: rotate || 20,
               ease: ease || "linear",
             }}
           >
-            <Blob sx={{ height: blobHeight, color }} />
+            <Blob sx={{ height: blobHeight, color: color || "white" }} />
           </motion.div>
         );
       })}
