@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkkeithrfung_dev=self.webpackChunkkeithrfung_dev||[]).push([[237],{5831:function(e,n,t){t.r(n);var u=t(1151),c=t(7294),r=t(1410);function s(e){const n=Object.assign({h1:"h1"},(0,u.ah)(),e.components);return c.createElement(n.h1,null,"Posts")}n.default=function(e){return void 0===e&&(e={}),c.createElement(r.A,e,c.createElement(s,e))}}}]);
+//# sourceMappingURL=component---src-pages-blog-mdx-903675c822a7df3f1711.js.map
