@@ -13,28 +13,32 @@ const links = [
   {
     order: 4,
     href: "https://open.spotify.com/user/4mallyintroduced?si=05351fa14606442e",
-    alt: "Spotify Profile",
+    alt: "Spotify Icon",
+    ariaLabel: "Spotify Profile",
     Icon: SpotifyIcon,
     hoverColor: "verdigris",
   },
   {
     order: 3,
     href: "https://instagram.com/keith.r.fung",
-    alt: "Instagram Profile",
+    alt: "Instagram Icon",
+    ariaLabel: "Instagram Profile",
     Icon: InstagramIcon,
     hoverColor: "darkTopaz",
   },
   {
     order: 2,
     href: "https://github.com/keithrfung",
-    alt: "Github Profile",
+    alt: "Github Icon",
+    ariaLabel: "Github Profile",
     Icon: GitHubIcon,
     hoverColor: "darkLavender",
   },
   {
     order: 1,
     href: "https://linkedin.com/in/keithrfung",
-    alt: "LinkedIn Profile",
+    alt: "LinkedIn Icon",
+    ariaLabel: "LinkedIn Profile",
     Icon: LinkedInIcon,
     hoverColor: "spiroDiscoBall",
   },
@@ -51,7 +55,7 @@ export const Header: FC = () => (
   >
     <Link
       href="/"
-      alt="Reload Site"
+      aria-label="Reload Site"
       sx={{
         color: "text",
         verticalAlign: "center",
@@ -66,10 +70,11 @@ export const Header: FC = () => (
     <Box>
       {links
         .sort((a, b) => a.order - b.order)
-        .map(({ href, alt, Icon, hoverColor }) => (
+        .map(({ href, alt, Icon, hoverColor, ariaLabel }) => (
           <Shaker style={{ marginLeft: 10 }}>
-            <Link href={href} alt={alt}>
+            <Link href={href} aria-label={ariaLabel}>
               <Icon
+                alt={alt}
                 sx={{
                   height: ICON_SIZE,
                   width: ICON_SIZE,
