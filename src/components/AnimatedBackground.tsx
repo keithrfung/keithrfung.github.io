@@ -77,8 +77,6 @@ export const AnimatedBackground: FC = () => {
       if (ref.current) {
         setWidth(ref.current.clientWidth);
         setHeight(ref.current.clientHeight);
-        console.log(height);
-        console.log(width);
       }
     }
 
