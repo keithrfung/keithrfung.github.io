@@ -105,6 +105,7 @@ export const AnimatedBackground: FC = () => {
           blobVariations[index];
         return (
           <motion.div
+            key={`floating-blob-${index}`}
             style={{
               position: "absolute",
               maxWidth: "fit-content",

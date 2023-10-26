@@ -54,8 +54,8 @@ export const Header: FC = () => (
     }}
   >
     <Link
-      href="/"
-      aria-label="Reload Site"
+      to="/"
+      aria-label="keithrfung.dev"
       sx={{
         color: "text",
         verticalAlign: "center",
@@ -70,9 +70,9 @@ export const Header: FC = () => (
     <Box>
       {links
         .sort((a, b) => a.order - b.order)
-        .map(({ href, alt, Icon, hoverColor, ariaLabel }) => (
-          <Shaker style={{ marginLeft: 10 }}>
-            <Link href={href} aria-label={ariaLabel}>
+        .map(({ href, alt, Icon, hoverColor, ariaLabel }, index) => (
+          <Shaker style={{ marginLeft: 10 }} key={`nav-icon-link-${index}`}>
+            <a href={href} aria-label={ariaLabel}>
               <Icon
                 alt={alt}
                 sx={{
@@ -84,7 +84,7 @@ export const Header: FC = () => (
                   },
                 }}
               />
-            </Link>
+            </a>
           </Shaker>
         ))}
     </Box>

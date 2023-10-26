@@ -1,8 +1,9 @@
 /** @jsx jsx */
-import { Box, jsx, Text } from "theme-ui";
+import { jsx, Text } from "theme-ui";
 
 import { FC } from "react";
-import Link from "./link";
+
+const linkStyle = { color: "spiroDiscoBall", textDecoration: "none" };
 
 export const Footer: FC = () => (
   <footer
@@ -18,17 +19,24 @@ export const Footer: FC = () => (
   >
     <Text>
       Designed & Developed by{" "}
-      <Link href="https://keithrfung.dev">Keith Fung</Link> © 2023
+      <a href="https://keithrfung.dev" sx={linkStyle}>
+        Keith Fung
+      </a>{" "}
+      © 2023
     </Text>
     <Text sx={{ fontSize: [1, 2, 2] }}>
       Icons by{" "}
-      <Link href="https://freeicons.io/profile/823" alt="Muhammad Haq Profile">
+      <a
+        href="https://freeicons.io/profile/823"
+        aria-label="Muhammad Haq Profile"
+        sx={linkStyle}
+      >
         Muhammad Haq
-      </Link>{" "}
+      </a>{" "}
       from{" "}
-      <Link href="https://freeicons.io/" alt="Freeicons.io">
+      <a href="https://freeicons.io/" aria-label="Freeicons.io" sx={linkStyle}>
         freeicons.io
-      </Link>
+      </a>
     </Text>
   </footer>
 );
